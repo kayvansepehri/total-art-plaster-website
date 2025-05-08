@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Total Art Plaster Test</title>
+  <style>
+    /* Floating Button Style */
+    .floating-quote-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00695c; /* deep green */
+      color: white;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .floating-quote-button:hover {
+      background-color: #004d40;
+    }
+
+    /* For demo purposes */
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .spacer {
+      height: 1000px;
+    }
+
+    #quote-form {
+      padding: 30px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Total Art Plaster</h1>
+  <p>Scroll down to see the quote form section.</p>
+
+  <div class="spacer"></div>
+
+  <section id="quote-form">
+    <h2>Get a Free Quote</h2>
+    <form>
+      <label>Name:<br><input type="text" name="name"></label><br><br>
+      <label>Phone:<br><input type="text" name="phone"></label><br><br>
+      <label>Message:<br><textarea name="message"></textarea></label><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Floating Button -->
+  <a href="#quote-form" class="floating-quote-button">📝 Free Quote</a>
+
+</body>
+</html>
